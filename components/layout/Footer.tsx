@@ -1,6 +1,6 @@
 "use client";
 
-import { Linkedin, Mail } from "lucide-react";
+import { Linkedin, Mail, Github } from "lucide-react";
 
 const QUICK_LINKS = [
   { label: "Work", href: "#work" },
@@ -12,6 +12,7 @@ const QUICK_LINKS = [
 
 const SOCIALS = [
   { icon: Linkedin, href: "https://www.linkedin.com/in/hardikbajaj364/", label: "LinkedIn" },
+  { icon: Github, href: "https://github.com/Hardik364", label: "GitHub" },
 ];
 
 export default function Footer() {

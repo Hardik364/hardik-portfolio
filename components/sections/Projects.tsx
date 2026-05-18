@@ -8,37 +8,37 @@ const FILTER_TABS = ["All", "Web App", "API", "SaaS", "Open Source"];
 
 const PROJECTS = [
   {
-    title: "TaskFlow SaaS",
+    title: "UniBuddy",
     tags: ["SaaS", "Web App"],
     description:
-      "A project management SaaS with real-time collaboration, Kanban boards, and team workspaces. Built for 500+ concurrent users.",
-    stack: ["Next.js", "PostgreSQL", "Prisma", "Socket.io", "AWS"],
+      "A comprehensive platform connecting university students with mentors, resources, and community. Features real-time chat, user authentication, and profile management.",
+    stack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
     gradient: "from-indigo-600 to-purple-600",
     gradientHover: "from-indigo-500 to-purple-500",
-    liveUrl: "#",
-    githubUrl: "#",
+    liveUrl: "https://unibuddy-nu.vercel.app/signup",
+    githubUrl: "https://github.com/Hardik364/Vybe",
   },
   {
-    title: "ShopAPI",
-    tags: ["API", "Backend"],
+    title: "Flex It Out",
+    tags: ["Web App", "Interactive"],
     description:
-      "A production-ready e-commerce REST API with auth, payments (Stripe), inventory management, and full test coverage.",
-    stack: ["Node.js", "Express", "MongoDB", "Redis", "Docker"],
+      "An interactive fitness and wellness application showcasing modern UI/UX design. Built with smooth animations and responsive design.",
+    stack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
     gradient: "from-cyan-600 to-teal-600",
     gradientHover: "from-cyan-500 to-teal-500",
-    liveUrl: "#",
-    githubUrl: "#",
+    liveUrl: "https://flex-it-out-drab.vercel.app/",
+    githubUrl: "https://github.com/Hardik364/Bajaj_Hackathon",
   },
   {
-    title: "DevDash",
-    tags: ["Open Source", "Web App"],
+    title: "Hardik Portfolio",
+    tags: ["Web App", "Portfolio"],
     description:
-      "A developer productivity dashboard aggregating GitHub activity, deployments, and analytics in one place.",
-    stack: ["React", "FastAPI", "PostgreSQL", "Vercel"],
+      "A modern portfolio website showcasing projects, skills, and experience. Built with Next.js 14, TypeScript, Tailwind CSS, and Framer Motion animations.",
+    stack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
     gradient: "from-rose-600 to-orange-600",
     gradientHover: "from-rose-500 to-orange-500",
-    liveUrl: "#",
-    githubUrl: "#",
+    liveUrl: "https://hardik-portfolio.vercel.app/",
+    githubUrl: "https://github.com/Hardik364/hardik-portfolio",
   },
 ];
 
@@ -208,7 +208,7 @@ export default function Projects() {
           className="text-center mt-12"
         >
           <a
-            href="https://github.com"
+            href="https://github.com/Hardik364"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-[#64748B] hover:text-white transition-colors text-sm font-medium group"
