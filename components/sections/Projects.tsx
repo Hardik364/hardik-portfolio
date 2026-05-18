@@ -64,11 +64,14 @@ function ProjectCard({ project, delay, isInView }: { project: typeof PROJECTS[0]
             backgroundSize: "40px 40px",
           }}
         />
-        {/* Floating project initials */}
-        <div className="absolute inset-0 flex items-center justify-center">
-          <span className="text-6xl font-grotesk font-bold text-white/20 select-none">
-            {project.title[0]}
-          </span>
+        {/* Project Info Overlay */}
+        <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center">
+          <h3 className="text-3xl font-grotesk font-bold text-white mb-2">
+            {project.title}
+          </h3>
+          <p className="text-white/80 text-sm font-medium max-w-xs line-clamp-2">
+            {project.description}
+          </p>
         </div>
 
         {/* Hover overlay */}
