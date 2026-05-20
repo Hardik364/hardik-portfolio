@@ -1,0 +1,131 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\normalsize
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{#1 \vspace{-2pt}}
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small#1} & \small#2 \\
+      \textit{\footnotesize#3} & \textit{\footnotesize#4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{\small#1} & \footnotesize#2 \\
+    \end{tabular*}\vspace{-6pt}
+}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+
+%-------------------------------------------
+\begin{document}
+
+\begin{center}
+    \textbf{\Large \scshape Hardik Bajaj} \vspace{-2pt}\\
+    \footnotesize +91-9501855364 $|$
+    \href{mailto:Hardikbajaj364@gmail.com}{\underline{Hardikbajaj364@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/hardikbajaj364}{\underline{LinkedIn}} $|$
+    \href{https://github.com/Hardik364}{\underline{GitHub}}
+\end{center}\vspace{-8pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Chitkara University}{Punjab, India}
+      {B.Tech Computer Science Engineering}{Aug. 2022 -- June 2026}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Software Development Intern (QA \& Testing)}{July 2025 -- Feb. 2026}
+      {Sprouts.ai}{Mohali, India}
+      \resumeItemListStart
+        \resumeItem{Designed automated test cases for REST APIs using Postman, validating endpoint integrity across staging/production environments.}
+        \resumeItem{Collaborated with MERN team on JIRA, logging and verifying bug fixes in Agile sprint cycles.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \footnotesize{\item{
+        \textbf{Languages:} JavaScript, TypeScript, HTML5, CSS3, SQL \quad \textbf{Frontend:} Next.js, React.js, Tailwind CSS, Framer Motion \\
+        \textbf{Backend:} Node.js, Express.js, Socket.IO, REST APIs, JWT Auth \quad \textbf{Databases:} PostgreSQL, Redis, MongoDB, Firebase \\
+        \textbf{Real-time:} WebRTC, Web Push API, Service Workers \quad \textbf{Tools:} Git, GitHub, Postman, Vercel, Render, PM2
+    }}
+\end{itemize}\vspace{-4pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{OpenChat} $|$ \emph{Next.js 15, Node.js, Express.js, PostgreSQL, Redis, Socket.IO, WebRTC}}{2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Full-stack real-time peer-to-peer voice calling platform for college students with JWT auth, Google OAuth2, Redis session management supporting 1,200+ concurrent users.}
+        \resumeItem{WebRTC with Perfect Negotiation, Socket.IO signaling, Web Push notifications; deployed on Vercel/Render achieving sub-100ms latency and 99.9\% uptime.}
+        \resumeItem{\href{https://unibuddy-nu.vercel.app/signup}{\underline{unibuddy-nu.vercel.app}}}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{FlexItOut} $|$ \emph{Next.js, React.js, Node.js, TensorFlow.js, PostgreSQL}}{Feb. 2025 -- Mar. 2025}
+      \resumeItemListStart
+        \resumeItem{AI fitness app with real-time pose detection using TensorFlow.js MoveNet, rep counting, and form accuracy scoring for exercises.}
+        \resumeItem{RESTful backend with Express.js and Firebase Auth; responsive React dashboard with live pose overlay and progress analytics.}
+        \resumeItem{\href{https://flex-it-out-drab.vercel.app/}{\underline{flex-it-out.vercel.app}}}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Hardik Portfolio} $|$ \emph{Next.js 14, TypeScript, Tailwind CSS, Framer Motion}}{Mar. 2026 -- Present}
+      \resumeItemListStart
+        \resumeItem{Modern responsive portfolio with smooth animations, project showcases, resume download, and social integrations. Deployed on Vercel with 95+ Lighthouse score.}
+        \resumeItem{\href{https://hardik-portfolio-steel.vercel.app/}{\underline{hardik-portfolio-steel.vercel.app}}}
+      \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\end{document}
