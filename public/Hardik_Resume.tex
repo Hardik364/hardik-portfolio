@@ -1,4 +1,4 @@
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -19,11 +19,11 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.2in}
 
 \urlstyle{same}
 \raggedbottom
@@ -31,43 +31,43 @@
 \setlength{\tabcolsep}{0in}
 
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-8pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
 
 \pdfgentounicode=1
 
 \newcommand{\resumeItem}[1]{
-  \item\small{{#1 \vspace{-2pt}}}
+  \item\tiny{{#1 \vspace{-3pt}}}
 }
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
+  \vspace{-3pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+      \textbf{\small#1} & {\tiny #2} \\
+      \textit{\tiny#3} & \textit{\tiny #4} \\
     \end{tabular*}\vspace{-7pt}
 }
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
+      \small\textbf{#1} & \tiny#2 \\
     \end{tabular*}\vspace{-7pt}
 }
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-3pt}}
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.12in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
 \begin{document}
 
 \begin{center}
-    \textbf{\Huge \scshape Hardik Bajaj} \\ \vspace{1pt}
-    \small +91-9501855364 $|$
+    \textbf{\Large \scshape Hardik Bajaj} \\ \vspace{2pt}
+    \tiny +91-9501855364 $|$
     \href{mailto:Hardikbajaj364@gmail.com}{\underline{Hardikbajaj364@gmail.com}} $|$
-    \href{https://www.linkedin.com/in/hardikbajaj364}{\underline{linkedin.com/in/hardikbajaj364}} $|$
-    \href{https://github.com/Hardik364}{\underline{github.com/Hardik364}}
+    \href{https://www.linkedin.com/in/hardikbajaj364}{\underline{LinkedIn}} $|$
+    \href{https://github.com/Hardik364}{\underline{GitHub}}
 \end{center}
 
 %-----------EDUCATION-----------
@@ -75,36 +75,30 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Chitkara University}{Punjab, India}
-      {Bachelor of Computer Science Engineering}{Aug. 2022 -- June 2026}
-    \resumeSubheading
-      {Deakin University (Exchange Program)}{Burwood, Melbourne}
-      {Bachelor of Computer Science Engineering}{Aug. 2022 -- June 2024}
+      {B.Tech Computer Science Engineering}{Aug 2022 -- June 2026}
   \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Software Development Intern (QA \& Testing)}{July 2025 -- Feb. 2026}
+      {Software Development Intern (QA \& Testing)}{July 2025 -- Feb 2026}
       {Sprouts.ai}{Mohali, India}
       \resumeItemListStart
-        \resumeItem{Designed and executed manual and automated test cases for REST APIs using Postman, validating request/response integrity and ensuring correctness of full-stack web application endpoints across staging and production environments.}
-        \resumeItem{Collaborated with the MERN stack development team on JIRA to log, track, and verify bug fixes, gaining hands-on exposure to Agile sprint cycles, code reviews, and release pipelines.}
-        \resumeItem{Identified edge cases and regression issues across front-end and back-end modules, contributing to a measurable reduction in post-release bug reports and improving overall product quality.}
+        \resumeItem{Designed and executed automated test cases for REST APIs using Postman, validating endpoint integrity across staging/production environments.}
+        \resumeItem{Collaborated with MERN development team on JIRA, logging and verifying bug fixes in Agile sprint cycles.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 %-----------SKILLS-----------
 \section{Skills}
-\begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-        \textbf{Languages:}{ JavaScript (ES6+), TypeScript, Java, HTML5, CSS3, SQL} \\
-        \textbf{Frontend:}{ Next.js, React.js, Tailwind CSS, Framer Motion, Web APIs} \\
-        \textbf{Backend:}{ Node.js, Express.js, Socket.IO, REST APIs, JWT Authentication} \\
-        \textbf{Databases:}{ PostgreSQL, Redis, MongoDB, Firebase Firestore, NoSQL} \\
-        \textbf{Real-time:}{ WebRTC, Socket.IO, Web Push API, Service Workers} \\
-        \textbf{Developer Tools:}{ Git, GitHub, Postman, VS Code, JIRA, Vercel, Render, PM2} \\
-        \textbf{Concepts:}{ Full-Stack Development, Microservices, JWT Auth, OAuth2, Responsive Design, Agile/Scrum} \\
+\begin{itemize}[leftmargin=0.12in, label={}]
+    \tiny{\item{
+        \textbf{Languages:} JavaScript, TypeScript, HTML5, CSS3, SQL \\
+        \textbf{Frontend:} Next.js, React.js, Tailwind CSS, Framer Motion \\
+        \textbf{Backend:} Node.js, Express.js, Socket.IO, JWT Auth, OAuth2 \\
+        \textbf{Databases:} PostgreSQL, Redis, MongoDB, Firebase \\
+        \textbf{Tools:} Git, GitHub, Postman, Vercel, Render, PM2
     }}
 \end{itemize}
 
@@ -113,30 +107,25 @@
 \resumeSubHeadingListStart
 
     \resumeProjectHeading
-      {\textbf{OpenChat} $|$ \emph{Next.js 15, Node.js, Express.js, PostgreSQL, Redis, Socket.IO, WebRTC}}{Jan. 2025 -- Present}
+      {\textbf{OpenChat} — Next.js 15, Node.js, Express.js, PostgreSQL, Redis, Socket.IO, WebRTC}{Present}
       \resumeItemListStart
-        \resumeItem{Engineered a full-stack real-time communication platform connecting college students across India with encrypted peer-to-peer voice calls, real-time messaging, and community forums — supporting 1,200+ concurrent active users.}
-        \resumeItem{Built scalable real-time backend with Node.js, Express.js, and Socket.IO (WebSocket) for live matching algorithms, call signaling, and message delivery; implemented JWT authentication (7-day TTL for users, 24h for guests) with Google OAuth2 integration via `google-auth-library`.}
-        \resumeItem{Designed high-performance frontend with Next.js 15 App Router and Tailwind CSS v4, integrated WebRTC with Perfect Negotiation pattern for peer-to-peer calls, implemented Web Push API for notifications, and leveraged Upstash Redis for distributed session management, rate limiting, and shadow banning.}
-        \resumeItem{Deployed PostgreSQL (Neon serverless), Redis (Upstash), and Node.js backend on Render; frontend on Vercel — achieving sub-100ms WebSocket latency and 99.9\% uptime with PM2 process management and Helmet security middleware.}
+        \resumeItem{Real-time peer-to-peer voice calling platform for college students with JWT auth, Google OAuth2, and Redis-backed session management supporting 1,200+ concurrent users.}
+        \resumeItem{Implemented WebRTC with Perfect Negotiation, Socket.IO for signaling, Web Push notifications, and shadow banning via Redis — deployed on Vercel (frontend) and Render (backend).}
         \resumeItem{\href{https://unibuddy-nu.vercel.app/signup}{\underline{unibuddy-nu.vercel.app}}}
       \resumeItemListEnd
 
     \resumeProjectHeading
-      {\textbf{FlexItOut} $|$ \emph{Next.js, React.js, Node.js, Express.js, PostgreSQL, TensorFlow.js}}{Feb. 2025 -- Mar. 2025}
+      {\textbf{FlexItOut} — Next.js, React.js, Node.js, TensorFlow.js, PostgreSQL}{Feb 2025 -- Mar 2025}
       \resumeItemListStart
-        \resumeItem{Developed a full-stack MERN AI fitness web application at the Bajaj Finserv Health Hackathon, featuring real-time pose detection, rep counting, and live form feedback using TensorFlow.js MoveNet — running entirely client-side for zero backend inference latency.}
-        \resumeItem{Built scalable RESTful APIs with Node.js and Express.js to manage user profiles, workout history, and exercise plans, backed by PostgreSQL; integrated Firebase Authentication for secure sign-in and session management.}
-        \resumeItem{Designed a responsive React.js dashboard with live pose skeleton overlay, rep counter, form accuracy scoring, and progress analytics — supporting Push-ups, Squats, and Crunches with angle-based form detection.}
+        \resumeItem{Full-stack AI fitness app with real-time pose detection using TensorFlow.js MoveNet, rep counting, and form accuracy scoring for Push-ups, Squats, and Crunches.}
+        \resumeItem{RESTful backend with Express.js and Firebase Auth; responsive React dashboard with live pose overlay and progress analytics.}
         \resumeItem{\href{https://flex-it-out-drab.vercel.app/}{\underline{flex-it-out.vercel.app}}}
       \resumeItemListEnd
 
     \resumeProjectHeading
-      {\textbf{Hardik Portfolio} $|$ \emph{Next.js 14, React.js, TypeScript, Tailwind CSS, Framer Motion}}{Mar. 2026 -- Present}
+      {\textbf{Hardik Portfolio} — Next.js 14, TypeScript, Tailwind CSS, Framer Motion}{Mar 2026 -- Present}
       \resumeItemListStart
-        \resumeItem{Built a modern, fully responsive portfolio website showcasing projects, skills, and technical experience — optimized for performance with Next.js 14 server-side rendering and static generation.}
-        \resumeItem{Implemented smooth scroll animations, project showcases, contact form, resume download, and social integrations (GitHub, LinkedIn) using Framer Motion for engaging user interactions and modern UI patterns.}
-        \resumeItem{Deployed on Vercel with automatic CI/CD from GitHub, achieving 95+ Lighthouse score, mobile-first design, and sub-1s load times across all pages.}
+        \resumeItem{Modern portfolio website with smooth animations, project showcases, resume download, and social integrations. Deployed on Vercel with 95+ Lighthouse score.}
         \resumeItem{\href{https://hardik-portfolio-steel.vercel.app/}{\underline{hardik-portfolio-steel.vercel.app}}}
       \resumeItemListEnd
 
